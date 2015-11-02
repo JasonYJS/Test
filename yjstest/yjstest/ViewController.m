@@ -17,6 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor grayColor];
+    UILabel *lab = [[UILabel alloc]initWithFrame:CGRectMake(30, 30, 200, 30)];
+    lab.text = @"这是一个测试Label";
+    lab.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:lab];
+    
+    NSLog(@"test2");
+    
+    NSLog(@"test");
     
 }
 
